@@ -33,30 +33,30 @@ $ cd Scoreboard
 3. Install app's dependencies
 $ npm install
 
-## Run the App
+# How to run the App
 
-# 1. Database Connection.
+## 1. Database Connection.
 Make sure MySql is running in the background and login as a root user.
 Create a database with name "scoreboard", or change the database name in the .env file to the database you have.
 Also in the .env file, change {{mypassword}} to your database password.
 
-# 2. Migration and Data Seeding.
+## 2. Migration and data seeding.
 In your terminal, run the following scripts
 
 $php artisan migrate
 
 $php artisan db:seed
 
-# 3. Start Back-end and Front-end
+## 3. Start both back-end and front-end
 In your terminal, run the following scripts
 
 $php -S localhost:8000 -t public
 
-open a new terminal, run
+Open a new terminal, run
 
 $npm run watch
 
-# 4. Use the App
+## 4. Use the App
 In your browser, go to localhost:8000
 
 
