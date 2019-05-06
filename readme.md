@@ -22,30 +22,44 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 
 
 ## Installation
-Clone repo
-run the following commands:
 
+run the following commands:
+1. Clone the repo
 $ git clone https://github.com/xuqiZhou/Scoreboard Scoreboard
 
-# go into app's directory
+2. Go into app's directory
 $ cd Scoreboard
 
-# install app's dependencies
+3. Install app's dependencies
 $ npm install
 
+## Run the App
 
-Usage
-# serve with hot reload at localhost:8080
-npm run serve
+1. Database Connection.
+Make sure MySql is running in the background and login as a root user.
+Create a database with name "scoreboard", or change the database name in the .env file to the database you have.
+Also in the .env file, change {{mypassword}} to your database password.
 
-# build for production with minification
-npm run build
+2. Migration and Data Seeding.
+In your terminal, run the following scripts
 
-# run linter
-npm run lint
+$php artisan migrate
 
-# run unit tests
-npm run test:unit
+$php artisan db:seed
 
-# run e2e tests
-npm run test:e2e
+3. Start Back-end and Front-end
+In your terminal, run the following scripts
+
+$php -S localhost:8000 -t public
+
+open a new terminal, run
+
+$npm run watch
+
+## Use the App
+In your browser, go to localhost:8000
+
+
+
+
+
