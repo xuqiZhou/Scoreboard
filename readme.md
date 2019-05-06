@@ -21,16 +21,19 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-Installation
+## Installation
 Clone repo
-# clone the repo
-$ git clone https://github.com/coreui/coreui-free-vue-admin-template.git CoreUI-Vue
+run the following commands:
+
+$ git clone https://github.com/xuqiZhou/Scoreboard Scoreboard
 
 # go into app's directory
-$ cd CoreUI-Vue
+$ cd Scoreboard
 
 # install app's dependencies
 $ npm install
+
+
 Usage
 # serve with hot reload at localhost:8080
 npm run serve
